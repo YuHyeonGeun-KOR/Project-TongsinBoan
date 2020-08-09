@@ -8,30 +8,30 @@ Installation of winlogbeat & kibana visualization
 **1. Winlogbeat Downlod** 
 
 
-![캡쳐](./1.png)<br><br><br><br>
+![캡쳐](./img/1.png)<br><br><br><br>
 
 
 **2. winlogbeat.yml – output을 logstash로 설정하기**
 
 
-![캡쳐](./2.png)
+![캡쳐](./img/2.png)
 
 
-![캡쳐](./3.png)<br><br><br><br>
+![캡쳐](./img/3.png)<br><br><br><br>
 
 
 **3. Configure Winlogbeat**
 
-![캡쳐](./4.png)<br><br><br><br>
+![캡쳐](./img/4.png)<br><br><br><br>
 
 **4. Start winlogbeat**
 
-![캡쳐](./6.png)<br><br><br><br>
+![캡쳐](./img/6.png)<br><br><br><br>
 
 
 **5. Log Count (2020/08/06)**
 
-![캡쳐](./5.png)<br><br><br><br>
+![캡쳐](./img/5.png)<br><br><br><br>
 
 시간을00시부터 23시까지  설정하여 검색하였지만 9시에만 검색이되었다 이러한 이유는 추후에 분석을 하여 확인해 보려한다.
 
@@ -40,7 +40,7 @@ ECS Field Reference
 =====
 위에서 추가한 index pattern과 그 내용을 확인 했을 때 table에는 다음과 같은 filed가 나왔다 
 
-![캡쳐](./8.png)<br><br><br><br>
+![캡쳐](./img/8.png)<br><br><br><br>
 
 
 따라서 이러한 filed에 따른 각각의 의미를 먼저 알아보고 차후에 진행될 프로젝트에 어떤 유의점을 가지고 해당 항목들을 필터링 할지 고민하며 해당 표를 참조하려 한다. 
@@ -93,7 +93,7 @@ ECS filed reference 홈페이지 : https://www.elastic.co/guide/en/ecs/current/e
 실제 log 분석
 =====
 
-![캡쳐](./9.png)
+![캡쳐](./img/9.png)
 해당 그림을 보았을 때 그래프가 가장 높은 부분의 시간대에서 어떤 이벤트가 발생하였는지 많은 소스중에서 하나를 선택에 처음부터 끝까지 분석해보려 한다. 
 
 ![캡쳐](./10.png)<br><br><br><br>
@@ -122,7 +122,7 @@ ECS filed reference 홈페이지 : https://www.elastic.co/guide/en/ecs/current/e
 
 **3. message**
 
-![캡쳐](./12.png)
+![캡쳐](./img/12.png)
 
 위의 event code에서 확인 했듯이 해당 event.code 가 13 이었고 해당 메시지는 레지스트리의 값을 변경하는 것이었다
 해당 진행이 실제로 진행된 시간은 2020-05-05 17:31:38.382 였다.
